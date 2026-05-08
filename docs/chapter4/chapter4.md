@@ -1,7 +1,6 @@
 # Chapter 4: Contrastive and Counterfactual Explanations
 
-**Author:** Youssef Amr (55-4624)
-
+**Author:** [Youssef Amr](https://www.linkedin.com/in/youssef-amr-2b019b274) (55-4624)
 ---
 
 ## 4.1 Introduction
