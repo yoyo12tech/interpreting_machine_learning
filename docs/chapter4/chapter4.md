@@ -1,7 +1,6 @@
 # Chapter 4: Contrastive and Counterfactual Explanations
 
 **Author:** [Youssef Amr](https://www.linkedin.com/in/youssef-amr-2b019b274) (55-4624)
-
 ---
 
 ## 4.1 Introduction
@@ -258,12 +257,12 @@ While counterfactuals ask *what to change*, contrastive explanations compare a *
 Given:
 - $\mathbf{x}$: the actual input
 - $f(\mathbf{x}) = y$: the actual prediction
-- $\mathbf{x}^*$: a foil (comparison instance)
-- $f(\mathbf{x}^*) = y^*$: the foil's prediction
+- $\mathbf{x}^{*}$: a foil (comparison instance)
+- $f(\mathbf{x}^{*}) = y^{*}$: the foil's prediction
 
-A contrastive explanation answers: *"Why did $f(\mathbf{x}) = y$ and not $y^*$?"*
+A contrastive explanation answers: "Why did $f(\mathbf{x}) = y$ and not $y^{*}$?"
 
-The explanation identifies which features **differ** between $\mathbf{x}$ and $\mathbf{x}^*$ and how those differences drive the prediction difference.
+The explanation identifies which features **differ** between $\mathbf{x}$ and $\mathbf{x}^{*}$ and how those differences drive the prediction difference.
 
 ### Example
 
@@ -275,9 +274,9 @@ This is more intuitive than abstract feature importance because it grounds the e
 
 ### Connection to Shapley Values
 
-Contrastive explanations can be linked to **SHAP** (Chapter 2). A SHAP explanation $\phi_i(\mathbf{x})$ expresses the contribution of feature $i$ relative to a background distribution. By setting the background to a specific foil $\mathbf{x}^*$, SHAP becomes a contrastive explanation:
+Contrastive explanations can be linked to **SHAP** (Chapter 3). A SHAP explanation $\phi_i(\mathbf{x})$ expresses the contribution of feature $i$ relative to a background distribution. By setting the background to a specific foil $\mathbf{x}^{*}$, SHAP becomes a contrastive explanation:
 
-$$\phi_i(\mathbf{x}, \mathbf{x}^*) = f(\mathbf{x}) - f(\mathbf{x}^*) \text{ attributed to feature } i$$
+$$\phi_i(\mathbf{x}, \mathbf{x}^{*}) = f(\mathbf{x}) - f(\mathbf{x}^{*}) \text{ attributed to feature } i$$
 
 ---
 
