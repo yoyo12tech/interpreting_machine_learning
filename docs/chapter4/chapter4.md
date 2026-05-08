@@ -113,9 +113,14 @@ Some features cannot be changed — age, nationality, or past credit history. A 
 ### 4.4.4 Diversity
 A single counterfactual is often insufficient. A user should receive **multiple diverse alternatives**, each offering a different path to the desired outcome:
 
-- Path A: Increase income by €8,000
-- Path B: Reduce existing debt by €15,000
-- Path C: Increase income by €4,000 AND reduce debt by €7,000
+- Path A: Increase income by €10,000
+- Path C: Increase income by €5,000 AND reduce debt by €3,000
+- Path B: Increase income by €4,000 AND age by 7
+
+
+![Decision boundary showing diverse counterfactual paths](figures/decision_boundary.png)
+*Figure 4.1: A rejected applicant (red) has multiple counterfactual paths across the ML model decision boundary into the accept region. Each arrow represents a different minimal change that achieves approval.*
+
 
 ### 4.4.5 Plausibility
 The counterfactual $\mathbf{x}'$ should lie within the distribution of real data — not in an impossible or implausible region of feature space. A 22-year-old with 30 years of work experience is not a plausible counterfactual.
