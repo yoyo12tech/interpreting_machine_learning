@@ -259,7 +259,7 @@ Given:
 - $\mathbf{x}$: the actual input
 - $f(\mathbf{x}) = y$: the actual prediction
 - $\mathbf{x}_{foil}$: a foil (comparison instance)
-- $f(\mathbf{x}_{foil}) = y_{foil}$: the foil's prediction
+- $f(x_{foil}) = y_{foil}$: the foil's prediction
 
 A contrastive explanation answers: "Why did $f(\mathbf{x}) = y$ and not $y_{foil}$?"
 
