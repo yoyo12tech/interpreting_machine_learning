@@ -397,4 +397,16 @@ Wachter, S., Mittelstadt, B., & Russell, C. (2017). *Counterfactual Explanations
 
 ---
 
-*Chapter 4 | Interpreting Machine Learning | Youssef Amr (55-4624)*
+## Citation
+
+If you found this chapter useful, please cite it as:
+
+~~~bibtex
+@misc{amr_2026_XAI,
+  author       = {Youssef Amr},
+  title        = {Interpreting Machine Learning: A Gentle Introduction, Chapter 4},
+  year         = {2026},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/amrmsab/interpreting_machine_learning}},
+}
+~~~
