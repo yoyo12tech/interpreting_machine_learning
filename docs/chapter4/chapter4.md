@@ -364,7 +364,7 @@ No single algorithm excels on all metrics. There is an inherent tension:
 - **Diversity vs. Proximity**: Diverse CFs are by definition more spread out, so some will be farther away
 - **Sparsity vs. Validity**: Changing fewer features may make it harder to find a valid CF
 
----
+--- 
 
 ## 4.10 Reflective Questions
 
