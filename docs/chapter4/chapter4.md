@@ -175,8 +175,15 @@ Think of it as the difference between:
 - Walking through a door in the wall (FACE) — valid destination, connected by a realistic route
 
 ![FACE counterfactual diagram showing paths A, B, C, and D from original instance x](figures/FACE.png)
-*Figure 4.2: A, B, C, and D are four candidate counterfactuals of $\times$ (the original instance, marked with a cross on the left), all in the red class (the desired target class). The x-axis and y-axis represent two input features. The background colour indicates the model's predicted probability — darker red means more confidently classified as the target class, while the light band near the decision boundary is where the model is uncertain. Blue dots are training samples from the original class; red dots are from the target class. **A** is found by minimising the $\ell_2$ distance — it is the closest counterfactual, but it sits in a low-density region near the boundary where real data is sparse. **B** is a generic point with a large classification margin (confidently in the target class), but it is also in a low-density area. **C** lies in a high-density region and has a large margin, but the path from $\times$ to C passes through a low-density corridor. **D** is chosen by FACE as the best counterfactual: it lies in a high-density region, has a strong classification margin, **and** is connected to $\times$ via a high-density path — meaning there are real, plausible data points along the way. This makes D the most feasible option: the individual can realistically transition from $\times$ to D in small, data-supported steps.* 
-*(Source: Poyiadzi et al., 2020)*
+
+**Figure 4.2:** A, B, C, and D are four candidate counterfactuals of ×, where × (marked with a cross on the left) is the original instance. The x-axis and y-axis represent two input features. The background colour indicates the model's predicted probability — darker red means more confidently classified as the target class, while the light band near the decision boundary is where the model is uncertain. Blue dots are training samples from the original class; red dots are from the target class.
+
+- **A** is found by minimising the ℓ₂ distance — it is the closest counterfactual, but sits in a low-density region near the boundary where real data is sparse.
+- **B** is a generic point with a large classification margin (confidently in the target class), but it is also in a low-density area.
+- **C** lies in a high-density region and has a large margin, but the path from × to C passes through a low-density corridor.
+- **D** is chosen by FACE as the best counterfactual: it lies in a high-density region, has a strong classification margin, and is connected to × via a high-density path — meaning there are real, plausible data points along the way. This makes D the most feasible option: the individual can realistically transition from × to D in small, data-supported steps.
+
+*Source: Poyiadzi et al., 2020*
 
 ### 4.5.4 Growing Spheres (Laugel et al., 2017)
 
